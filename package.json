@@ -1,0 +1,40 @@
+{
+  "name": "netivot-olam",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Torah lessons MP3 player — search by rabbi, parasha, or date and stream from a swappable storage backend.",
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "run": "npm run build && npm run start",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "seed:media": "node scripts/make-sample-media.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.637.0",
+    "@aws-sdk/s3-request-presigner": "^3.637.0",
+    "@hebcal/core": "^5.4.8",
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "googleapis": "^144.0.0",
+    "music-metadata": "^10.6.0",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/express": "^4.17.21",
+    "@types/express-session": "^1.18.0",
+    "@types/node": "^22.5.0",
+    "@types/node-cron": "^3.0.11",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.2"
+  }
+}

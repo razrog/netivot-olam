@@ -1,0 +1,8 @@
+[
+  { "rabbi_name": "ראש הישיבה הרב יוסף ברוק שליט״א", "pic": "public/pic/bruk.jpg" },
+  { "rabbi_name": "המשגיח הרב נחום דיאמנדט שליט״א", "pic": "public/pic/diamant.png" },
+  { "rabbi_name": "הרב ישראל ארנון שליט״א", "pic": "public/pic/arnon.jpeg" },
+  { "rabbi_name": "הרב חיים בראון שליט״א", "pic": "public/braun.png" },
+  { "rabbi_name": "נתן בן סניור שליט״א", "pic": "public/bensenior.png" },
+  { "rabbi_name": "הרב ישראל שיינפלד שליט״א", "pic": "public/scheinfeld.png" }
+]

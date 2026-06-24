@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>נתיבות עולם — מאגר שיעורי תורה</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="shell" class="shell hidden">
+      <!-- פאנל צד: לוגו + נגן קבוע + משתמש -->
+      <aside class="sidebar">
+        <div class="side-logo"><img src="/pic/logo.png" alt="נתיבות עולם" /></div>
+        <div id="player" class="player-panel"></div>
+        <div class="side-user">
+          <span class="ti-avatar" aria-hidden="true">👤</span>
+          <span id="nav-greeting"></span>
+          <a id="admin-link" href="/admin.html" class="link-light hidden">ניהול</a>
+          <button id="logout" class="link-light">התנתקות</button>
+        </div>
+      </aside>
+
+      <!-- תוכן ראשי -->
+      <main id="app">
+        <section id="rabbis-card" class="card"></section>
+        <section id="filters-card" class="card"></section>
+        <div id="results"></div>
+      </main>
+    </div>
+
+    <audio id="audio" preload="metadata"></audio>
+
+    <!-- חלון התחברות -->
+    <div id="login" class="modal-overlay hidden">
+      <form id="login-form" class="login-card">
+        <div class="login-logo-box"><img src="/pic/logo.png" alt="נתיבות עולם" /></div>
+        <h2>כניסה למערכת</h2>
+        <p class="muted">גישה פרטית – נדרש להתחבר</p>
+        <label>שם משתמש
+          <input id="email" type="email" autocomplete="username" placeholder="הכנס שם משתמש" required />
+        </label>
+        <label>סיסמה
+          <input id="password" type="password" autocomplete="current-password" placeholder="הכנס סיסמה" required />
+        </label>
+        <button type="submit" class="btn">התחבר</button>
+        <p id="login-error" class="error hidden"></p>
+      </form>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

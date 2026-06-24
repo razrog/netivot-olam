@@ -1,0 +1,16 @@
+node_modules/
+dist/
+data/
+media/
+.env
+*.log
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Never commit credentials
+*.pem
+*-credentials.json
+service-account*.json
